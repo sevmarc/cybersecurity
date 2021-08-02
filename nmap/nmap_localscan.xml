@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug  2 18:23:01 2021 as: nmap -oX - -p 22-443 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -oX - -p 22-443 127.0.0.1" start="1627921381" startstr="Mon Aug  2 18:23:01 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="422" services="22-443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1627921381" endtime="1627921381"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="422">
+<extrareasons reason="conn-refused" count="422"/>
+</extraports>
+</ports>
+<times srtt="159" rttvar="175" to="100000"/>
+</host>
+<runstats><finished time="1627921381" timestr="Mon Aug  2 18:23:01 2021" elapsed="0.05" summary="Nmap done at Mon Aug  2 18:23:01 2021; 1 IP address (1 host up) scanned in 0.05 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
