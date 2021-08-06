@@ -5,9 +5,9 @@ Repo containing all cybersecurity related sub-projects
 
 
 ## python process
-git clone <repo>
-cd <repo>
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
+* git clone <repo>
+* cd <repo>
+* pip install virtualenv
+* virtualenv venv
+* source venv/bin/activate
+* pip install -r requirements.txt
