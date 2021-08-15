@@ -10,6 +10,8 @@ def caesar_cypher(message: str, shift_value: int, abc:str=alphabet) -> str:
     for l in message_lower:
         index_ = alphabet.find(l)
         if index_ == -1:  # not found char in alphabet
+            # can be removed, or left as original
+            message_decoded += l
             continue  # we skip/remove these characters
         shifted_index = (index_ + shift_value) % len(alphabet)
         message_decoded += alphabet[shifted_index]
