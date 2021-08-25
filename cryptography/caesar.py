@@ -1,11 +1,16 @@
 from alphabet import english_alphabet as alphabet
 
 
-def caesar_cypher(message: str, shift_value: int, abc:str=alphabet) -> str:
+def caesar_cypher(message: str, 
+                  shift_value: int, 
+                  abc:str=alphabet,
+                  reverse: bool = False) -> str:
     # ord('a') = 97; ord('z) = 122; 
     # ord('A') = 65; ord('Z') = 90
     message_lower = message.lower()  # capitalization is lost, don't care
-    
+    if reverse:
+        shift_value *= -1
+
     message_decoded = ''
     for l in message_lower:
         index_ = alphabet.find(l)
