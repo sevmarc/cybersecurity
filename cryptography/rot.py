@@ -8,5 +8,4 @@ def rot(message: str,
 
 
 if __name__ == '__main__':
-    print(rot('abcdefghijklm -------124nopqrstuvwxyz', 5))
-    print(rot('fghijklmnopqrstuvwxyzabcde', 5, True)) 
+    print(rot('Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh', 13, True))
