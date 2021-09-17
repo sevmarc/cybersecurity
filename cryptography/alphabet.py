@@ -7,5 +7,6 @@ english_keywordlist = [
     'of',
     'and',
     'that',
-    'have'
+    'have',
+    'is'
 ]
