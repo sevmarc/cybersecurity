@@ -1,16 +1,15 @@
 from alphabet import english_alphabet as alphabet
 
 
-def caesar_cypher(message: str, 
-                  shift_value: int, 
-                  abc:str=alphabet,
-                  reverse: bool = False) -> str:
-    # ord('a') = 97; ord('z) = 122; 
+def caesar_cypher(
+    message: str, shift_value: int, abc: str = alphabet, reverse: bool = False
+) -> str:
+    # ord('a') = 97; ord('z) = 122;
     # ord('A') = 65; ord('Z') = 90
     if reverse:
         shift_value *= -1
 
-    message_decoded = ''
+    message_decoded = ""
     for l in message:
         if l.islower():
             abc = abc.lower()
@@ -26,5 +25,9 @@ def caesar_cypher(message: str,
     return message_decoded
 
 
-if __name__ == '__main__':
-    print(caesar_cypher('Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh', 13, reverse=True))
+if __name__ == "__main__":
+    print(
+        caesar_cypher(
+            "Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh", 13, reverse=True
+        )
+    )
